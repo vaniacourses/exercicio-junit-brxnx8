@@ -28,7 +28,7 @@ public class jokenpoTest {
 		int resultado = jokenpo.jogar(4, 0);		
 		Assertions.assertEquals(-1, resultado);		
 	}
-	
+	@DisplayName("Testa se o retorna 1 para casos de vitoria do jogador 1")
 	@Test
 	public void testVencedorJogadorUm() {
 		int resultado1 = jokenpo.jogar(1, 2);
@@ -36,7 +36,7 @@ public class jokenpoTest {
 		int resultado3 = jokenpo.jogar(3, 1);
 		assertTrue(resultado1 == 1 && resultado2 == 1 && resultado3 == 1);
 	}
-	
+	@DisplayName("Testa se o retorna 2 para casos de vitoria do jogador 2")
 	@Test
 	public void testVencedorJogadorDois() {
 		int resultado1 = jokenpo.jogar(2, 1);
@@ -44,7 +44,7 @@ public class jokenpoTest {
 		int resultado3 = jokenpo.jogar(1, 3);
 		assertTrue(resultado1 == 2 && resultado2 == 2 && resultado3 == 2);	
 	}
-	
+	@DisplayName("Testa se o retorna 0 para casos de empate")
 	@Test
 	public void testEmpate() {
 		int resultado1 = jokenpo.jogar(1, 1);
